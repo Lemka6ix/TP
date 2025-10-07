@@ -22,7 +22,7 @@ def draw_sierpinski(t, order, size):
 def main():
     screen = turtle.Screen()
     screen.setup(800, 800)
-    screen.title("Кривая Серпинского - Рекурсивный метод")
+    screen.title("Рекурсия")
     
     t = turtle.Turtle()
     t.speed(0)
