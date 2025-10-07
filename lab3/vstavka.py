@@ -1,6 +1,6 @@
 m = list(map(int, input().split()))
 
-def vstav_num(arr):
+def vstav(arr):
     for i in range(1, len(arr)):
         key = arr[i]
         j = i - 1
@@ -9,6 +9,12 @@ def vstav_num(arr):
             j -= 1
         arr[j+1] = key
 
-vstav_num(m)
-print(m)
+vstav(m)
+print(*m)
+
+
+s = input().split()
+
+vstav(s)
+print(*s)
 
