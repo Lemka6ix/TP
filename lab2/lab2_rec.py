@@ -1,42 +1,40 @@
 import turtle
 
-def draw_sierpinski(t, order, size):
-    if order == 0:
-        for _ in range(3):
-            t.forward(size)
-            t.left(120)
+DEPTH = 5
+
+screen = turtle.Screen()
+screen.setup(800, 800)
+screen.title(f"Рекурсия")
+screen.bgcolor("white")
+
+t = turtle.Turtle()
+t.speed(0)
+t.penup()
+t.goto(-200, -50)
+
+# Направление зависит от глубины
+if DEPTH % 2 == 0:
+    t.setheading(0)    # горизонтально
+else:
+    t.setheading(60)   # под углом
+
+t.pendown()
+t.color("purple")
+t.pensize(2)
+
+
+def draw_curve(t, size, depth, direction=1):
+    if depth == 0:
+        t.forward(size)
     else:
-        size /= 2
-        draw_sierpinski(t, order - 1, size)
-        t.forward(size)
-        draw_sierpinski(t, order - 1, size)
-        t.backward(size)
-        t.left(60)
-        t.forward(size)
-        t.right(60)
-        draw_sierpinski(t, order - 1, size)
-        t.left(60)
-        t.backward(size)
-        t.right(60)
+        draw_curve(t, size/2, depth-1, -direction)
+        t.right(60 * direction)
+        draw_curve(t, size/2, depth-1, direction)
+        t.right(60 * direction)
+        draw_curve(t, size/2, depth-1, -direction)
 
-def main():
-    screen = turtle.Screen()
-    screen.setup(800, 800)
-    screen.title("Рекурсия")
-    
-    t = turtle.Turtle()
-    t.speed(0)
-    t.penup()
-    t.goto(-200, -150)
-    t.pendown()
-    
-    order = 4  # Порядок кривой
-    size = 400  # Размер базового треугольника
-    
-    draw_sierpinski(t, order, size)
-    
-    t.hideturtle()
-    screen.exitonclick()
 
-if __name__ == "__main__":
-    main()
+draw_curve(t, 300, DEPTH)
+
+t.hideturtle()
+screen.exitonclick()
