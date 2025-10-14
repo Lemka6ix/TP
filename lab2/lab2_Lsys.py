@@ -12,7 +12,7 @@ def sierpinski_arrowhead_lsystem(order):
     }
     
     current_string = axiom
-    for _ in range(order):
+    for i in range(order):
         next_string = ""
         for char in current_string:
             next_string += rules.get(char, char)
