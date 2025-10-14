@@ -1,5 +1,16 @@
 import turtle
 
+def draw_curve(t, size, depth, direction=1):
+    if depth == 0:
+        t.forward(size)
+    else:
+        draw_curve(t, size/2, depth-1, -direction)
+        t.right(60 * direction)
+        draw_curve(t, size/2, depth-1, direction)
+        t.right(60 * direction)
+        draw_curve(t, size/2, depth-1, -direction)
+
+
 DEPTH = 5
 
 screen = turtle.Screen()
@@ -23,15 +34,6 @@ t.color("purple")
 t.pensize(2)
 
 
-def draw_curve(t, size, depth, direction=1):
-    if depth == 0:
-        t.forward(size)
-    else:
-        draw_curve(t, size/2, depth-1, -direction)
-        t.right(60 * direction)
-        draw_curve(t, size/2, depth-1, direction)
-        t.right(60 * direction)
-        draw_curve(t, size/2, depth-1, -direction)
 
 
 draw_curve(t, 300, DEPTH)
