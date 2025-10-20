@@ -9,9 +9,10 @@ def vstav(arr):
             j -= 1
         arr[j+1] = key
 
+
+
 vstav(m)
 print(*m)
-
 
 s = input().split()
 
