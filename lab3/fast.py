@@ -18,14 +18,17 @@ def fast_sort(arr):
 
 
 def part_iter(arr, low, high):
-    centr = arr[high]
+    mid = (low + high) // 2
+    centr = arr[mid]
+
+    arr[mid], arr[high] = arr[high], arr[mid]
     i = low - 1
 
     for j in range(low, high):
         if arr[j] <= centr:
-            i +=1
+            i += 1
             arr[i], arr[j] = arr[j], arr[i]
-    arr[i+1], arr[high] = arr[high], arr[i+1]
+    arr[i + 1], arr[high] = arr[high], arr[i + 1]
     return i + 1
  
 
