@@ -1,4 +1,6 @@
 m = list(map(int, input().split()))
+s = input().split()
+
 
 def vstav(arr):
     for i in range(1, len(arr)):
@@ -9,13 +11,10 @@ def vstav(arr):
             j -= 1
         arr[j+1] = key
 
-
+print('\n---result---')
 
 vstav(m)
-print(*m)
-
-s = input().split()
-
 vstav(s)
-print(*s)
 
+print(*m)
+print(*s)

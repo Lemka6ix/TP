@@ -1,4 +1,6 @@
 m = list(map(int, input().split()))
+s = input().split()
+
 
 def fast_sort(arr):
     if len(arr) < 1:
@@ -25,6 +27,11 @@ def part_iter(arr, low, high):
             arr[i], arr[j] = arr[j], arr[i]
     arr[i+1], arr[high] = arr[high], arr[i+1]
     return i + 1
+ 
 
+print('\n___result___')
 fast_sort(m)
-print(m)
+fast_sort(s)
+
+print(*m)
+print(*s)
