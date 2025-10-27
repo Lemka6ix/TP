@@ -11,7 +11,7 @@ def vstav(arr):
             j -= 1
         arr[j+1] = key
 
-print('\n---result---')
+print('\n___result___')
 
 vstav(m)
 vstav(s)
