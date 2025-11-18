@@ -1,0 +1,452 @@
+[     6.955] (--) Log file renamed from "/var/log/Xorg.pid-920.log" to "/var/log/Xorg.0.log"
+[     6.956] 
+X.Org X Server 1.20.11
+X Protocol Version 11, Revision 0
+[     6.956] Build Operating System: linux Debian
+[     6.956] Current Operating System: Linux ws1013404005 5.10.0-25-amd64 #1 SMP Debian 5.10.191-1 (2023-08-16) x86_64
+[     6.956] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.10.0-25-amd64 root=/dev/nvme0n1p2 ro quiet
+[     6.956] Build Date: 23 March 2023  10:25:56AM
+[     6.956] xorg-server 2:1.20.11-1+deb11u6 (https://www.debian.org/support) 
+[     6.956] Current version of pixman: 0.40.0
+[     6.956] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[     6.956] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[     6.956] (==) Log file: "/var/log/Xorg.0.log", Time: Tue Nov 18 08:33:28 2025
+[     6.958] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[     6.959] (==) No Layout section.  Using the first Screen section.
+[     6.959] (==) No screen section available. Using defaults.
+[     6.959] (**) |-->Screen "Default Screen Section" (0)
+[     6.960] (**) |   |-->Monitor "<default monitor>"
+[     6.960] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[     6.960] (==) Automatically adding devices
+[     6.960] (==) Automatically enabling devices
+[     6.960] (==) Automatically adding GPU devices
+[     6.960] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[     6.962] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[     6.962] 	Entry deleted from font path.
+[     6.963] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/100dpi/:unscaled,
+	/usr/share/fonts/X11/75dpi/:unscaled,
+	/usr/share/fonts/X11/Type1,
+	/usr/share/fonts/X11/100dpi,
+	/usr/share/fonts/X11/75dpi,
+	built-ins
+[     6.963] (==) ModulePath set to "/usr/lib/xorg/modules"
+[     6.963] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[     6.963] (II) Loader magic: 0x5561f5193e40
+[     6.963] (II) Module ABI versions:
+[     6.963] 	X.Org ANSI C Emulation: 0.4
+[     6.963] 	X.Org Video Driver: 24.1
+[     6.963] 	X.Org XInput driver : 24.1
+[     6.963] 	X.Org Server Extension : 10.0
+[     6.963] (++) using VT number 7
+
+[     6.963] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[     6.964] (II) xfree86: Adding drm device (/dev/dri/card0)
+[     6.971] (--) PCI:*(10@0:0:0) 10de:21c4:10de:21c4 rev 161, Mem @ 0xf6000000/16777216, 0xe0000000/268435456, 0xf0000000/33554432, I/O @ 0x0000e000/128, BIOS @ 0x????????/131072
+[     6.971] (II) LoadModule: "glx"
+[     6.972] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[     6.979] (II) Module glx: vendor="X.Org Foundation"
+[     6.979] 	compiled for 1.20.11, module version = 1.0.0
+[     6.979] 	ABI class: X.Org Server Extension, version 10.0
+[     6.979] (II) Applying OutputClass "nvidia" to /dev/dri/card0
+[     6.979] 	loading driver: nvidia
+[     7.213] (==) Matched nvidia as autoconfigured driver 0
+[     7.213] (==) Matched nouveau as autoconfigured driver 1
+[     7.213] (==) Matched nv as autoconfigured driver 2
+[     7.213] (==) Matched modesetting as autoconfigured driver 3
+[     7.213] (==) Matched fbdev as autoconfigured driver 4
+[     7.213] (==) Matched vesa as autoconfigured driver 5
+[     7.213] (==) Assigned the driver to the xf86ConfigLayout
+[     7.213] (II) LoadModule: "nvidia"
+[     7.214] (II) Loading /usr/lib/xorg/modules/drivers/nvidia_drv.so
+[     7.220] (II) Module nvidia: vendor="NVIDIA Corporation"
+[     7.220] 	compiled for 1.6.99.901, module version = 1.0.0
+[     7.220] 	Module class: X.Org Video Driver
+[     7.220] (II) LoadModule: "nouveau"
+[     7.220] (II) Loading /usr/lib/xorg/modules/drivers/nouveau_drv.so
+[     7.223] (II) Module nouveau: vendor="X.Org Foundation"
+[     7.223] 	compiled for 1.20.10, module version = 1.0.17
+[     7.223] 	Module class: X.Org Video Driver
+[     7.223] 	ABI class: X.Org Video Driver, version 24.1
+[     7.223] (II) LoadModule: "nv"
+[     7.223] (WW) Warning, couldn't open module nv
+[     7.223] (EE) Failed to load module "nv" (module does not exist, 0)
+[     7.223] (II) LoadModule: "modesetting"
+[     7.223] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[     7.224] (II) Module modesetting: vendor="X.Org Foundation"
+[     7.224] 	compiled for 1.20.11, module version = 1.20.11
+[     7.224] 	Module class: X.Org Video Driver
+[     7.224] 	ABI class: X.Org Video Driver, version 24.1
+[     7.224] (II) LoadModule: "fbdev"
+[     7.224] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[     7.225] (II) Module fbdev: vendor="X.Org Foundation"
+[     7.225] 	compiled for 1.20.0, module version = 0.5.0
+[     7.225] 	Module class: X.Org Video Driver
+[     7.225] 	ABI class: X.Org Video Driver, version 24.0
+[     7.225] (II) LoadModule: "vesa"
+[     7.225] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[     7.226] (II) Module vesa: vendor="X.Org Foundation"
+[     7.226] 	compiled for 1.20.9, module version = 2.5.0
+[     7.226] 	Module class: X.Org Video Driver
+[     7.226] 	ABI class: X.Org Video Driver, version 24.1
+[     7.226] (II) NVIDIA dlloader X Driver  470.182.03  Fri Feb 24 03:24:48 UTC 2023
+[     7.226] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[     7.226] (II) NOUVEAU driver Date:   Sat Jan 23 12:24:42 2021 -0500
+[     7.226] (II) NOUVEAU driver for NVIDIA chipset families :
+[     7.226] 	RIVA TNT            (NV04)
+[     7.226] 	RIVA TNT2           (NV05)
+[     7.226] 	GeForce 256         (NV10)
+[     7.226] 	GeForce 2           (NV11, NV15)
+[     7.226] 	GeForce 4MX         (NV17, NV18)
+[     7.226] 	GeForce 3           (NV20)
+[     7.226] 	GeForce 4Ti         (NV25, NV28)
+[     7.226] 	GeForce FX          (NV3x)
+[     7.226] 	GeForce 6           (NV4x)
+[     7.226] 	GeForce 7           (G7x)
+[     7.227] 	GeForce 8           (G8x)
+[     7.227] 	GeForce 9           (G9x)
+[     7.227] 	GeForce GTX 2xx/3xx (GT2xx)
+[     7.227] 	GeForce GTX 4xx/5xx (GFxxx)
+[     7.227] 	GeForce GTX 6xx/7xx (GKxxx)
+[     7.227] 	GeForce GTX 9xx     (GMxxx)
+[     7.227] 	GeForce GTX 10xx    (GPxxx)
+[     7.227] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[     7.227] (II) FBDEV: driver for framebuffer: fbdev
+[     7.227] (II) VESA: driver for VESA chipsets: vesa
+[     7.546] (II) Loading sub module "fb"
+[     7.546] (II) LoadModule: "fb"
+[     7.547] (II) Loading /usr/lib/xorg/modules/libfb.so
+[     7.547] (II) Module fb: vendor="X.Org Foundation"
+[     7.547] 	compiled for 1.20.11, module version = 1.0.0
+[     7.547] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[     7.547] (II) Loading sub module "wfb"
+[     7.548] (II) LoadModule: "wfb"
+[     7.548] (II) Loading /usr/lib/xorg/modules/libwfb.so
+[     7.548] (II) Module wfb: vendor="X.Org Foundation"
+[     7.548] 	compiled for 1.20.11, module version = 1.0.0
+[     7.548] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[     7.548] (II) Loading sub module "ramdac"
+[     7.548] (II) LoadModule: "ramdac"
+[     7.548] (II) Module "ramdac" already built-in
+[     7.613] (WW) Falling back to old probe method for modesetting
+[     7.613] (WW) Falling back to old probe method for fbdev
+[     7.613] (II) Loading sub module "fbdevhw"
+[     7.613] (II) LoadModule: "fbdevhw"
+[     7.613] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[     7.614] (II) Module fbdevhw: vendor="X.Org Foundation"
+[     7.614] 	compiled for 1.20.11, module version = 0.0.2
+[     7.614] 	ABI class: X.Org Video Driver, version 24.1
+[     7.614] (II) NVIDIA(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[     7.614] (==) NVIDIA(0): Depth 24, (==) framebuffer bpp 32
+[     7.614] (==) NVIDIA(0): RGB weight 888
+[     7.614] (==) NVIDIA(0): Default visual is TrueColor
+[     7.614] (==) NVIDIA(0): Using gamma correction (1.0, 1.0, 1.0)
+[     7.614] (**) NVIDIA(0): Enabling 2D acceleration
+[     7.614] (II) Loading sub module "glxserver_nvidia"
+[     7.614] (II) LoadModule: "glxserver_nvidia"
+[     7.614] (II) Loading /usr/lib/xorg/modules/extensions/libglxserver_nvidia.so
+[     7.653] (II) Module glxserver_nvidia: vendor="NVIDIA Corporation"
+[     7.653] 	compiled for 1.6.99.901, module version = 1.0.0
+[     7.653] 	Module class: X.Org Server Extension
+[     7.653] (II) NVIDIA GLX Module  470.182.03  Fri Feb 24 03:21:43 UTC 2023
+[     7.654] (II) NVIDIA: The X server supports PRIME Render Offload.
+[     7.671] (--) NVIDIA(0): Valid display device(s) on GPU-0 at PCI:10:0:0
+[     7.671] (--) NVIDIA(0):     DFP-0 (boot)
+[     7.671] (--) NVIDIA(0):     DFP-1
+[     7.671] (--) NVIDIA(0):     DFP-2
+[     7.671] (--) NVIDIA(0):     DFP-3
+[     7.672] (II) NVIDIA(0): NVIDIA GPU NVIDIA GeForce GTX 1660 SUPER (TU116-B) at
+[     7.672] (II) NVIDIA(0):     PCI:10:0:0 (GPU-0)
+[     7.672] (--) NVIDIA(0): Memory: 6291456 kBytes
+[     7.672] (--) NVIDIA(0): VideoBIOS: 90.16.42.00.6c
+[     7.672] (II) NVIDIA(0): Detected PCI Express Link width: 16X
+[     7.687] (--) NVIDIA(GPU-0): Idek Iiyama PLE2483H-DP (DFP-0): connected
+[     7.687] (--) NVIDIA(GPU-0): Idek Iiyama PLE2483H-DP (DFP-0): Internal TMDS
+[     7.687] (--) NVIDIA(GPU-0): Idek Iiyama PLE2483H-DP (DFP-0): 330.0 MHz maximum pixel clock
+[     7.687] (--) NVIDIA(GPU-0): 
+[     7.687] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[     7.687] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[     7.687] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[     7.687] (--) NVIDIA(GPU-0): 
+[     7.687] (--) NVIDIA(GPU-0): DFP-2: disconnected
+[     7.687] (--) NVIDIA(GPU-0): DFP-2: Internal DisplayPort
+[     7.687] (--) NVIDIA(GPU-0): DFP-2: 2660.0 MHz maximum pixel clock
+[     7.687] (--) NVIDIA(GPU-0): 
+[     7.687] (--) NVIDIA(GPU-0): DFP-3: disconnected
+[     7.687] (--) NVIDIA(GPU-0): DFP-3: Internal TMDS
+[     7.687] (--) NVIDIA(GPU-0): DFP-3: 165.0 MHz maximum pixel clock
+[     7.687] (--) NVIDIA(GPU-0): 
+[     7.716] (==) NVIDIA(0): 
+[     7.716] (==) NVIDIA(0): No modes were requested; the default mode "nvidia-auto-select"
+[     7.716] (==) NVIDIA(0):     will be used as the requested mode.
+[     7.716] (==) NVIDIA(0): 
+[     7.717] (II) NVIDIA(0): Validated MetaModes:
+[     7.717] (II) NVIDIA(0):     "DFP-0:nvidia-auto-select"
+[     7.717] (II) NVIDIA(0): Virtual screen size determined to be 1920 x 1080
+[     7.755] (--) NVIDIA(0): DPI set to (92, 91); computed from "UseEdidDpi" X config
+[     7.755] (--) NVIDIA(0):     option
+[     7.755] (II) UnloadModule: "nouveau"
+[     7.755] (II) Unloading nouveau
+[     7.756] (II) UnloadModule: "modesetting"
+[     7.756] (II) Unloading modesetting
+[     7.756] (II) UnloadModule: "fbdev"
+[     7.756] (II) Unloading fbdev
+[     7.756] (II) UnloadSubModule: "fbdevhw"
+[     7.756] (II) Unloading fbdevhw
+[     7.756] (II) UnloadModule: "vesa"
+[     7.756] (II) Unloading vesa
+[     7.756] (II) NVIDIA: Reserving 24576.00 MB of virtual memory for indirect memory
+[     7.756] (II) NVIDIA:     access.
+[     7.759] (II) NVIDIA(0): ACPI: failed to connect to the ACPI event daemon; the daemon
+[     7.759] (II) NVIDIA(0):     may not be running or the "AcpidSocketPath" X
+[     7.759] (II) NVIDIA(0):     configuration option may not be set correctly.  When the
+[     7.759] (II) NVIDIA(0):     ACPI event daemon is available, the NVIDIA X driver will
+[     7.759] (II) NVIDIA(0):     try to use it to receive ACPI event notifications.  For
+[     7.759] (II) NVIDIA(0):     details, please see the "ConnectToAcpid" and
+[     7.759] (II) NVIDIA(0):     "AcpidSocketPath" X configuration options in Appendix B: X
+[     7.759] (II) NVIDIA(0):     Config Options in the README.
+[     7.780] (II) NVIDIA(0): Setting mode "DFP-0:nvidia-auto-select"
+[     7.898] (==) NVIDIA(0): Disabling shared memory pixmaps
+[     7.898] (==) NVIDIA(0): Backing store enabled
+[     7.898] (==) NVIDIA(0): Silken mouse enabled
+[     7.898] (==) NVIDIA(0): DPMS enabled
+[     7.898] (II) Loading sub module "dri2"
+[     7.898] (II) LoadModule: "dri2"
+[     7.898] (II) Module "dri2" already built-in
+[     7.899] (II) NVIDIA(0): [DRI2] Setup complete
+[     7.899] (II) NVIDIA(0): [DRI2]   VDPAU driver: nvidia
+[     7.899] (II) Initializing extension Generic Event Extension
+[     7.899] (II) Initializing extension SHAPE
+[     7.899] (II) Initializing extension MIT-SHM
+[     7.899] (II) Initializing extension XInputExtension
+[     7.899] (II) Initializing extension XTEST
+[     7.899] (II) Initializing extension BIG-REQUESTS
+[     7.900] (II) Initializing extension SYNC
+[     7.900] (II) Initializing extension XKEYBOARD
+[     7.900] (II) Initializing extension XC-MISC
+[     7.900] (II) Initializing extension SECURITY
+[     7.900] (II) Initializing extension XFIXES
+[     7.900] (II) Initializing extension RENDER
+[     7.900] (II) Initializing extension RANDR
+[     7.900] (II) Initializing extension COMPOSITE
+[     7.900] (II) Initializing extension DAMAGE
+[     7.900] (II) Initializing extension MIT-SCREEN-SAVER
+[     7.900] (II) Initializing extension DOUBLE-BUFFER
+[     7.900] (II) Initializing extension RECORD
+[     7.900] (II) Initializing extension DPMS
+[     7.900] (II) Initializing extension Present
+[     7.900] (II) Initializing extension DRI3
+[     7.900] (II) Initializing extension X-Resource
+[     7.900] (II) Initializing extension XVideo
+[     7.901] (II) Initializing extension XVideo-MotionCompensation
+[     7.901] (II) Initializing extension SELinux
+[     7.901] (II) SELinux: Disabled on system
+[     7.901] (II) Initializing extension GLX
+[     7.901] (II) Initializing extension GLX
+[     7.901] (II) Indirect GLX disabled.
+[     7.901] (II) GLX: Another vendor is already registered for screen 0
+[     7.901] (II) Initializing extension XFree86-VidModeExtension
+[     7.901] (II) Initializing extension XFree86-DGA
+[     7.901] (II) Initializing extension XFree86-DRI
+[     7.901] (II) Initializing extension DRI2
+[     7.901] (II) Initializing extension NV-GLX
+[     7.901] (II) Initializing extension NV-CONTROL
+[     7.901] (II) Initializing extension XINERAMA
+[     7.953] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[     7.953] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[     7.953] (II) LoadModule: "libinput"
+[     7.953] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[     7.957] (II) Module libinput: vendor="X.Org Foundation"
+[     7.957] 	compiled for 1.20.8, module version = 0.30.0
+[     7.957] 	Module class: X.Org XInput Driver
+[     7.957] 	ABI class: X.Org XInput driver, version 24.1
+[     7.957] (II) Using input driver 'libinput' for 'Power Button'
+[     7.957] (**) Power Button: always reports core events
+[     7.957] (**) Option "Device" "/dev/input/event1"
+[     7.957] (**) Option "_source" "server/udev"
+[     7.961] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[     7.961] (II) event1  - Power Button: device is a keyboard
+[     7.961] (II) event1  - Power Button: device removed
+[     7.996] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input1/event1"
+[     7.996] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[     7.996] (**) Option "xkb_model" "pc105"
+[     7.996] (**) Option "xkb_layout" "us"
+[     7.996] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[     7.996] (II) event1  - Power Button: device is a keyboard
+[     7.997] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[     7.997] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[     7.997] (II) Using input driver 'libinput' for 'Power Button'
+[     7.997] (**) Power Button: always reports core events
+[     7.997] (**) Option "Device" "/dev/input/event0"
+[     7.997] (**) Option "_source" "server/udev"
+[     7.997] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[     7.997] (II) event0  - Power Button: device is a keyboard
+[     7.997] (II) event0  - Power Button: device removed
+[     8.028] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[     8.028] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[     8.028] (**) Option "xkb_model" "pc105"
+[     8.028] (**) Option "xkb_layout" "us"
+[     8.028] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[     8.028] (II) event0  - Power Button: device is a keyboard
+[     8.029] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=9 (/dev/input/event10)
+[     8.029] (II) No input driver specified, ignoring this device.
+[     8.029] (II) This device may have been added with another device file.
+[     8.029] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=10 (/dev/input/event11)
+[     8.029] (II) No input driver specified, ignoring this device.
+[     8.029] (II) This device may have been added with another device file.
+[     8.030] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=11 (/dev/input/event12)
+[     8.030] (II) No input driver specified, ignoring this device.
+[     8.030] (II) This device may have been added with another device file.
+[     8.030] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event7)
+[     8.030] (II) No input driver specified, ignoring this device.
+[     8.030] (II) This device may have been added with another device file.
+[     8.030] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event8)
+[     8.030] (II) No input driver specified, ignoring this device.
+[     8.030] (II) This device may have been added with another device file.
+[     8.030] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=8 (/dev/input/event9)
+[     8.030] (II) No input driver specified, ignoring this device.
+[     8.030] (II) This device may have been added with another device file.
+[     8.031] (II) config/udev: Adding input device USB OPTICAL MOUSE  (/dev/input/event2)
+[     8.031] (**) USB OPTICAL MOUSE : Applying InputClass "libinput pointer catchall"
+[     8.031] (II) Using input driver 'libinput' for 'USB OPTICAL MOUSE '
+[     8.031] (**) USB OPTICAL MOUSE : always reports core events
+[     8.031] (**) Option "Device" "/dev/input/event2"
+[     8.031] (**) Option "_source" "server/udev"
+[     8.089] (II) event2  - USB OPTICAL MOUSE : is tagged by udev as: Mouse
+[     8.089] (II) event2  - USB OPTICAL MOUSE : device is a pointer
+[     8.089] (II) event2  - USB OPTICAL MOUSE : device removed
+[     8.120] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:07.1/0000:0b:00.3/usb5/5-1/5-1:1.0/0003:275D:0BA6.0001/input/input2/event2"
+[     8.120] (II) XINPUT: Adding extended input device "USB OPTICAL MOUSE " (type: MOUSE, id 8)
+[     8.120] (**) Option "AccelerationScheme" "none"
+[     8.120] (**) USB OPTICAL MOUSE : (accel) selected scheme none/0
+[     8.120] (**) USB OPTICAL MOUSE : (accel) acceleration factor: 2.000
+[     8.120] (**) USB OPTICAL MOUSE : (accel) acceleration threshold: 4
+[     8.182] (II) event2  - USB OPTICAL MOUSE : is tagged by udev as: Mouse
+[     8.182] (II) event2  - USB OPTICAL MOUSE : device is a pointer
+[     8.183] (II) config/udev: Adding input device USB OPTICAL MOUSE  (/dev/input/mouse0)
+[     8.183] (II) No input driver specified, ignoring this device.
+[     8.183] (II) This device may have been added with another device file.
+[     8.184] (II) config/udev: Adding input device SEM USB Keyboard (/dev/input/event3)
+[     8.184] (**) SEM USB Keyboard: Applying InputClass "libinput keyboard catchall"
+[     8.184] (II) Using input driver 'libinput' for 'SEM USB Keyboard'
+[     8.184] (**) SEM USB Keyboard: always reports core events
+[     8.184] (**) Option "Device" "/dev/input/event3"
+[     8.185] (**) Option "_source" "server/udev"
+[     8.187] (II) event3  - SEM USB Keyboard: is tagged by udev as: Keyboard
+[     8.187] (II) event3  - SEM USB Keyboard: device is a keyboard
+[     8.188] (II) event3  - SEM USB Keyboard: device removed
+[     8.220] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:07.1/0000:0b:00.3/usb5/5-2/5-2.4/5-2.4:1.0/0003:1A2C:2124.0002/input/input3/event3"
+[     8.220] (II) XINPUT: Adding extended input device "SEM USB Keyboard" (type: KEYBOARD, id 9)
+[     8.220] (**) Option "xkb_model" "pc105"
+[     8.220] (**) Option "xkb_layout" "us"
+[     8.222] (II) event3  - SEM USB Keyboard: is tagged by udev as: Keyboard
+[     8.223] (II) event3  - SEM USB Keyboard: device is a keyboard
+[     8.224] (II) config/udev: Adding input device SEM USB Keyboard Consumer Control (/dev/input/event4)
+[     8.224] (**) SEM USB Keyboard Consumer Control: Applying InputClass "libinput keyboard catchall"
+[     8.224] (II) Using input driver 'libinput' for 'SEM USB Keyboard Consumer Control'
+[     8.224] (**) SEM USB Keyboard Consumer Control: always reports core events
+[     8.224] (**) Option "Device" "/dev/input/event4"
+[     8.224] (**) Option "_source" "server/udev"
+[     8.227] (II) event4  - SEM USB Keyboard Consumer Control: is tagged by udev as: Keyboard
+[     8.227] (II) event4  - SEM USB Keyboard Consumer Control: device is a keyboard
+[     8.227] (II) event4  - SEM USB Keyboard Consumer Control: device removed
+[     8.268] (II) libinput: SEM USB Keyboard Consumer Control: needs a virtual subdevice
+[     8.268] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:07.1/0000:0b:00.3/usb5/5-2/5-2.4/5-2.4:1.1/0003:1A2C:2124.0003/input/input4/event4"
+[     8.268] (II) XINPUT: Adding extended input device "SEM USB Keyboard Consumer Control" (type: MOUSE, id 10)
+[     8.268] (**) Option "AccelerationScheme" "none"
+[     8.268] (**) SEM USB Keyboard Consumer Control: (accel) selected scheme none/0
+[     8.268] (**) SEM USB Keyboard Consumer Control: (accel) acceleration factor: 2.000
+[     8.268] (**) SEM USB Keyboard Consumer Control: (accel) acceleration threshold: 4
+[     8.270] (II) event4  - SEM USB Keyboard Consumer Control: is tagged by udev as: Keyboard
+[     8.271] (II) event4  - SEM USB Keyboard Consumer Control: device is a keyboard
+[     8.272] (II) config/udev: Adding input device SEM USB Keyboard System Control (/dev/input/event5)
+[     8.272] (**) SEM USB Keyboard System Control: Applying InputClass "libinput keyboard catchall"
+[     8.272] (II) Using input driver 'libinput' for 'SEM USB Keyboard System Control'
+[     8.272] (**) SEM USB Keyboard System Control: always reports core events
+[     8.272] (**) Option "Device" "/dev/input/event5"
+[     8.272] (**) Option "_source" "server/udev"
+[     8.275] (II) event5  - SEM USB Keyboard System Control: is tagged by udev as: Keyboard
+[     8.275] (II) event5  - SEM USB Keyboard System Control: device is a keyboard
+[     8.275] (II) event5  - SEM USB Keyboard System Control: device removed
+[     8.300] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:07.1/0000:0b:00.3/usb5/5-2/5-2.4/5-2.4:1.1/0003:1A2C:2124.0003/input/input5/event5"
+[     8.300] (II) XINPUT: Adding extended input device "SEM USB Keyboard System Control" (type: KEYBOARD, id 11)
+[     8.300] (**) Option "xkb_model" "pc105"
+[     8.300] (**) Option "xkb_layout" "us"
+[     8.302] (II) event5  - SEM USB Keyboard System Control: is tagged by udev as: Keyboard
+[     8.303] (II) event5  - SEM USB Keyboard System Control: device is a keyboard
+[     8.303] (II) config/udev: Adding input device HD-Audio Generic Front Mic (/dev/input/event13)
+[     8.303] (II) No input driver specified, ignoring this device.
+[     8.303] (II) This device may have been added with another device file.
+[     8.304] (II) config/udev: Adding input device HD-Audio Generic Rear Mic (/dev/input/event14)
+[     8.304] (II) No input driver specified, ignoring this device.
+[     8.304] (II) This device may have been added with another device file.
+[     8.305] (II) config/udev: Adding input device HD-Audio Generic Line (/dev/input/event15)
+[     8.305] (II) No input driver specified, ignoring this device.
+[     8.305] (II) This device may have been added with another device file.
+[     8.305] (II) config/udev: Adding input device HD-Audio Generic Line Out (/dev/input/event16)
+[     8.305] (II) No input driver specified, ignoring this device.
+[     8.305] (II) This device may have been added with another device file.
+[     8.306] (II) config/udev: Adding input device HD-Audio Generic Front Headphone (/dev/input/event17)
+[     8.306] (II) No input driver specified, ignoring this device.
+[     8.306] (II) This device may have been added with another device file.
+[     8.306] (II) config/udev: Adding input device PC Speaker (/dev/input/event6)
+[     8.306] (II) No input driver specified, ignoring this device.
+[     8.306] (II) This device may have been added with another device file.
+[     8.313] (**) SEM USB Keyboard Consumer Control: Applying InputClass "libinput keyboard catchall"
+[     8.313] (II) Using input driver 'libinput' for 'SEM USB Keyboard Consumer Control'
+[     8.313] (**) SEM USB Keyboard Consumer Control: always reports core events
+[     8.313] (**) Option "Device" "/dev/input/event4"
+[     8.313] (**) Option "_source" "_driver/libinput"
+[     8.313] (II) libinput: SEM USB Keyboard Consumer Control: is a virtual subdevice
+[     8.313] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:07.1/0000:0b:00.3/usb5/5-2/5-2.4/5-2.4:1.1/0003:1A2C:2124.0003/input/input4/event4"
+[     8.313] (II) XINPUT: Adding extended input device "SEM USB Keyboard Consumer Control" (type: KEYBOARD, id 12)
+[     8.313] (**) Option "xkb_model" "pc105"
+[     8.313] (**) Option "xkb_layout" "us"
+[     8.329] (--) NVIDIA(GPU-0): Idek Iiyama PLE2483H-DP (DFP-0): connected
+[     8.329] (--) NVIDIA(GPU-0): Idek Iiyama PLE2483H-DP (DFP-0): Internal TMDS
+[     8.329] (--) NVIDIA(GPU-0): Idek Iiyama PLE2483H-DP (DFP-0): 330.0 MHz maximum pixel clock
+[     8.329] (--) NVIDIA(GPU-0): 
+[     8.344] (--) NVIDIA(GPU-0): Idek Iiyama PLE2483H-DP (DFP-0): connected
+[     8.344] (--) NVIDIA(GPU-0): Idek Iiyama PLE2483H-DP (DFP-0): Internal TMDS
+[     8.344] (--) NVIDIA(GPU-0): Idek Iiyama PLE2483H-DP (DFP-0): 330.0 MHz maximum pixel clock
+[     8.344] (--) NVIDIA(GPU-0): 
+[    26.166] (--) NVIDIA(GPU-0): Idek Iiyama PLE2483H-DP (DFP-0): connected
+[    26.166] (--) NVIDIA(GPU-0): Idek Iiyama PLE2483H-DP (DFP-0): Internal TMDS
+[    26.166] (--) NVIDIA(GPU-0): Idek Iiyama PLE2483H-DP (DFP-0): 330.0 MHz maximum pixel clock
+[    26.166] (--) NVIDIA(GPU-0): 
+[    26.166] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    26.166] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    26.166] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    26.166] (--) NVIDIA(GPU-0): 
+[    26.166] (--) NVIDIA(GPU-0): DFP-2: disconnected
+[    26.166] (--) NVIDIA(GPU-0): DFP-2: Internal DisplayPort
+[    26.166] (--) NVIDIA(GPU-0): DFP-2: 2660.0 MHz maximum pixel clock
+[    26.166] (--) NVIDIA(GPU-0): 
+[    26.166] (--) NVIDIA(GPU-0): DFP-3: disconnected
+[    26.166] (--) NVIDIA(GPU-0): DFP-3: Internal TMDS
+[    26.166] (--) NVIDIA(GPU-0): DFP-3: 165.0 MHz maximum pixel clock
+[    26.166] (--) NVIDIA(GPU-0): 
+[    27.605] (--) NVIDIA(GPU-0): Idek Iiyama PLE2483H-DP (DFP-0): connected
+[    27.605] (--) NVIDIA(GPU-0): Idek Iiyama PLE2483H-DP (DFP-0): Internal TMDS
+[    27.605] (--) NVIDIA(GPU-0): Idek Iiyama PLE2483H-DP (DFP-0): 330.0 MHz maximum pixel clock
+[    27.605] (--) NVIDIA(GPU-0): 
+[    27.605] (--) NVIDIA(GPU-0): DFP-1: disconnected
+[    27.605] (--) NVIDIA(GPU-0): DFP-1: Internal TMDS
+[    27.605] (--) NVIDIA(GPU-0): DFP-1: 165.0 MHz maximum pixel clock
+[    27.605] (--) NVIDIA(GPU-0): 
+[    27.605] (--) NVIDIA(GPU-0): DFP-2: disconnected
+[    27.605] (--) NVIDIA(GPU-0): DFP-2: Internal DisplayPort
+[    27.605] (--) NVIDIA(GPU-0): DFP-2: 2660.0 MHz maximum pixel clock
+[    27.605] (--) NVIDIA(GPU-0): 
+[    27.606] (--) NVIDIA(GPU-0): DFP-3: disconnected
+[    27.606] (--) NVIDIA(GPU-0): DFP-3: Internal TMDS
+[    27.606] (--) NVIDIA(GPU-0): DFP-3: 165.0 MHz maximum pixel clock
+[    27.606] (--) NVIDIA(GPU-0): 
+[    86.573] (EE) event3  - SEM USB Keyboard: client bug: event processing lagging behind by 16ms, your system is too slow
