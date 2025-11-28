@@ -1,9 +1,5 @@
 import os
 
-# text (str): строка, в которой осуществляется поиск
-# pattern (str): подстрока, которую нужно найти
-  
-# list: список позиций, где найдена подстрока
 
 def bmh_search(text, pattern):
 
@@ -41,6 +37,7 @@ def bmh_search(text, pattern):
             i += shift
     
     return occurrences
+
 
 def main():
     log_file = '/var/log/Xorg.0.log'
